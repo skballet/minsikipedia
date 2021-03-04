@@ -1,0 +1,170 @@
+
+body {
+  margin: 8px;
+  font-family: '맑은고딕';
+  font-size: 18px;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  color: #f0f4f5;
+}
+li{
+  color: black;
+}
+
+
+h2{
+  background-color: #F57EB6;
+  font-size: 50px;
+  margin: 0;
+  margin-top: 0;
+  padding: 10px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+}
+
+h3{
+  margin: 0;
+  font-size: 15px;
+  display: block;
+  /*border-top: 3px solid #F57EB6;*/
+  background-color: #ECC7CD;
+  padding-left: 10px;
+}
+
+
+footer{
+  background: #F99FC9;
+  font-size: 15px;
+  color: #f0f4f5;
+  align-items: center;
+  width: 100%;
+  bottom: 0px;
+  padding: 3px;
+  margin-right: 8px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black/* #E782A9*/;
+  padding: 5px 12px;
+}
+.navbar__logo{
+  font-size: 35px;
+}
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 5px;
+
+
+}
+.navbar__menu li{
+    color: #f0f4f5;
+  padding: 8px 20px;
+  border-radius: 3px;
+}
+.navbar__menu li:hover{
+  background-color: #ECB3CB;
+}
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  margin: 5px;
+  padding: 0;
+  align-items: flex-end;
+}
+.navbar__links a{
+  padding: 4px 15px;
+}
+
+.navbar__toggleBtn {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: grey;
+}
+
+.sns__instaBtn{
+  color: #f0f4f5;
+
+}
+
+}
+.bm li{
+  margin-top: 20px;
+}
+.bm img{
+  margin-bottom: 20px;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#article{
+  flex: 1;
+}
+#article li{
+  font-size: 17px;
+  margin-bottom: 5px;
+  float: center;
+}
+.sub__menu{
+  padding: 0;
+  position: absolute;
+  margin-top: 13px;
+  width: 250px;
+}
+
+
+.sub__menu > li{
+  list-style-type: none;
+  height: 20px;
+  color : black;
+}
+.sub__menu > li > a{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 1300px){
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar__menu li{
+    width: 100%;
+    text-align: center;
+  }
+  .navbar__links{
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar__toggleBtn{
+    display: block;
+  }
+
+  .navbar__menu.active,
+  .navbar__links.active {
+    display: flex;
+  }
+}
